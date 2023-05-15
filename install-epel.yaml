@@ -1,0 +1,8 @@
+---
+- name: install epel
+  hosts: all
+  tasks:
+    - name: install package
+      package:
+        name: epel-release
+        state: present

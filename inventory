@@ -1,0 +1,7 @@
+# node3.clevory.local.
+
+[web]
+node1.clevory.local
+
+[db]
+node2.clevory.local
