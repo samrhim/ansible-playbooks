@@ -1,0 +1,8 @@
+ansible all -m yum -a "name=acme state=present" : package manager
+ansible all -m copy "src=/etc/hosts dest=/tmp/hosts": copy file
+ansible all -a "/sbin/reboot" -f 10 : restart 10 servers
+ansible web -m file -a  "dest=/tmp/test.txt mode=600" : change file properties
+ansible db -m setup  -a "filter=ip"  : get some facts 
+ansible web -m service -a "name=httpd state=started enabled=true"
+
+
